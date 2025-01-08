@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/certification/certification.css"> <!-- Lien vers votre fichier CSS -->
+    <title>Projets</title>
+</head>
+<body>
+    <div class="Titre">
+        <h1>Projets réalisés</h1>
+    </div>
+
+    <!-- Section pour le choix initial -->
+    <div id="initial-choice" class="tabs">
+      <button class="tab-btn" onclick="navigateTo('reseaux')">Réseaux</button>
+      <button class="tab-btn" onclick="navigateTo('code')">Code</button>
+      <button class="tab-btn" onclick="navigateTo('cybersecurite')">Cybersécurité</button>
+    </div>
+
+    <!-- Section contenant les projets réseaux -->
+    <section id="reseaux" class="tab-content" style="display: none;">
+        <div class="contenaire">
+            <div class="rectangle">
+              <img src="/certification/img/anssi.png" alt="Certification MOOC ANSSI">
+              <h4>Certification MOOC ANSSI</h4>
+              <p class="description">
+                Certification prouvant la maîtrise des outils Microsoft Azure pour la gestion et le développement d'applications cloud.
+              </p>
+              <p class="dates2">Date obtenue : Novembre 2024</p>
+            </div>
+
+            <div class="rectangle">
+              <img src="/certification/img/cloud101.png" alt="Certification Cloud 101">
+              <h4>Certification Cloud 101</h4>
+              <p class="description">
+                Cette certification valide les compétences en conception, déploiement et maintenance d'applications sur le cloud AWS.
+              </p>
+              <p class="dates">Date obtenue : Juin 2023</p>
+            </div>
+
+            <div class="rectangle">
+              <img src="/certification/img/base Kali.png" alt="Base Kali Linux">
+              <h4>Base Kali Linux</h4>
+              <p class="description">
+                Cette certification valide les compétences en sécurité offensive avec Kali Linux.
+              </p>
+              <p class="dates">Date obtenue : 07/01/2025</p>
+            </div>
+        </div>
+        <button class="back-btn" onclick="goBack()">Retour en arrière</button>
+    </section>
+
+    <!-- Section contenant les projets code -->
+    <section id="code" class="tab-content" style="display: none;">
+        <div class="contenaire">
+            <div class="rectangle">
+              <img src="/certification/img/sql.png" alt="Certification SQL">
+              <h4>Certification SQL</h4>
+              <p class="description">
+                Cette certification valide les compétences en conception, déploiement et maintenance de bases de données relationnelles.
+              </p>
+              <p class="dates">Date obtenue : Novembre 2024</p>
+            </div>
+
+            <div class="rectangle">
+              <img src="/certification/img/py.png" alt="Interview Python">
+              <h4>Interview Python</h4>
+              <p class="description">
+                Validation des compétences avancées en programmation Python.
+              </p>
+              <p class="dates">Date obtenue : 07/01/2025</p>
+            </div>
+
+            <div class="rectangle">
+              <img src="/certification/img/chatgpt for python.png" alt="ChatGPT pour Python">
+              <h4>ChatGPT pour Python</h4>
+              <p class="description">
+                Certification sur l'utilisation de ChatGPT pour automatiser des workflows Python.
+              </p>
+              <p class="dates">Date obtenue : 07/01/2025</p>
+            </div>
+        </div>
+        <button class="back-btn" onclick="goBack()">Retour en arrière</button>
+    </section>
+
+    <!-- Section contenant les projets cybersécurité -->
+    <section id="cybersecurite" class="tab-content" style="display: none;">
+        <div class="contenaire">
+            <div class="rectangle">
+              <img src="/certification/img/cisco-cyber.png" alt="Certification CISCO Cybersécurité Essentials">
+              <h4>Certification CISCO Cybersécurité Essentials</h4>
+              <p class="description">
+                Validation des compétences fondamentales en cybersécurité.
+              </p>
+              <p class="dates">Date obtenue : Juin 2023</p>
+            </div>
+
+            <div class="rectangle">
+              <img src="/certification/img//C101.png" alt="Certification CISCO Cybersécurité Essentials">
+              <h4>Certification Cybersécurité 101</h4>
+              <p class="description">
+                Validation avancée des compétences en cybersécurité.
+              </p>
+              <p class="dates">Date obtenue : Juin 2023</p>
+            </div>
+        </div>
+        <button class="back-btn" onclick="goBack()">Retour en arrière</button>
+    </section>
+
+    <!-- Bouton retour à l'accueil -->
+    <button id="return-home-btn" class="return-home-btn"><a href="/index.html">Retour à l'accueil</a></button>
+
+    <!-- Vidéo en arrière-plan -->
+    <video autoplay loop muted playsinline class="fullscreen-video">
+        <source src="/certification/video/1236-144355017.mp4" type="video/mp4">
+    </video>
+
+    <!-- JavaScript pour gérer les interactions -->
+    <script>
+        function navigateTo(tabId) {
+            document.getElementById('initial-choice').style.display = 'none';
+            document.getElementById('return-home-btn').style.display = 'none';
+
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.style.display = 'none');
+
+            document.getElementById(tabId).style.display = 'block';
+        }
+
+        function goBack() {
+            document.getElementById('initial-choice').style.display = 'block';
+            document.getElementById('return-home-btn').style.display = 'block';
+
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.style.display = 'none');
+        }
+    </script>
+</body>
+</html>
