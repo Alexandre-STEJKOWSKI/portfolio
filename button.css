@@ -1,0 +1,18 @@
+button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #333;
+	color: white;
+	border: none;
+	cursor: pointer;
+  }
+  
+  button:hover {
+	background-color: #555;
+}
+
+.boutton-slam{
+	margin-top: 210px;
+}
+  

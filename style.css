@@ -1,0 +1,84 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de la barre latérale (photo de profil et menu) */
+.barre-gauche {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 110vh;
+    background-color: rgba(50, 50, 50, 0.8); /* Fond sombre transparent pour la cohérence avec la vidéo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    z-index: 1; /* Assure que le menu reste au-dessus de la vidéo */
+}
+
+/* Style de la photo de profil et du nom */
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 100px;
+    border-radius: 30%; /* Rendre l'image circulaire */
+    margin-bottom: 10px;
+}
+
+.profile h1 {
+    margin: 0;
+    color: #fff;
+}
+
+/* Style du menu principal */
+.main-menu {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.main-menu li {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.main-menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(100, 100, 100, 0.9); /* Fond gris foncé */
+    border-radius: 5px;
+}
+
+.main-menu a:hover {
+    background-color: rgba(150, 150, 150, 0.9); /* Couleur de survol plus claire */
+}
+
+/* Vidéo en plein écran en arrière-plan */
+.fullscreen-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1; /* Place la vidéo derrière le contenu */
+}
+
+/* Style du texte principal et des liens */
+h1, h4 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
