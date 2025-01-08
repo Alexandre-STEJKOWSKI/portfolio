@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projet.css"> <!-- Lien vers votre fichier CSS -->
+    <title>Projets</title>
+</head>
+<body>
+    <div class="Titre">
+        <h1>Projets réalisés</h1>
+    </div>
+
+    <!-- Section pour le choix initial -->
+    <div id="initial-choice" class="tabs">
+      <button class="tab-btn" onclick="navigateTo('reseaux')">Réseaux</button>
+      <button class="tab-btn" onclick="navigateTo('code')">Code</button>
+  </div>
+
+  <!-- Section contenant les projets réseaux -->
+  <section id="reseaux" class="tab-content" style="display: none;">
+      <div class="contenaire">
+          <div class="rectangle">
+              <img src="/Projet/image/debian.png" alt="Installation Debian">
+              <h4>Installation de DEBIAN</h4>
+              <p class="description">
+                  Debian est une distribution Linux, composée presque exclusivement de logiciels libres.
+                  Elle est développée par le « Debian Project ».
+              </p>
+              <p class="dates">Dates : 2023 - 2024</p>
+          </div>
+
+          <div class="rectangle">
+            <img src="/Projet/image/logo_apache_linux.webp" alt="Installation Debian">
+            <h4>Serveur APACH DEBIAN</h4>
+            <p class="description">
+                Le serveur Web Apache est un logiciel open source qui joue un rôle central dans le domaine de l'hébergement Web
+            </p>
+            <p class="dates">Dates : 2023 - 2024</p>
+            <button><a href="/Projet/document/DEBIAN Alexandre STEJKOWSKI 07-2-2024 (2) (1).pdf">COMPTE RENDUE INSTALLATION SERVEUR APACHE SUR DEBIAN</a></button>
+        </div>
+
+
+
+          <div class="rectangle">
+            <img src="/Projet/image/serverlamp.png" alt="Installation Debian">
+            <h4>Installation SERVEUR LAMP</h4>
+            <p class="description">
+                LAMP est un acronyme du système d'exploitation Linux, du serveur web Apache, du serveur de base de données MySQL et du langage de programmation PHP
+            </p>
+            <p class="dates">Dates : 2023 - 2024</p>
+        </div>
+
+          <div class="rectangle">
+            <img src="/Projet/image/Windows server.png" alt="Installation Debian">
+            <h4>Installation de WINDOWS SERVER</h4>
+            <p class="description">
+                Windows Server joue un rôle important en ce qui concerne la gestion des données, offrant des outils et des fonctionnalités avancées pour le stockage, la sécurisation et le traitement des données
+            </p>
+            <p class="dates">Dates : 2023 - 2024</p>
+        </div>
+
+        <div class="rectangle">
+            <img src="/Projet/image/AD.png" alt="Installation Debian">
+            <h4>Configuaration AD sur WINDOWS SERVEUR</h4>
+            <p class="description">
+                AD est un annuaire géré et autonome alimenté par un serveur compatible Active Directory 
+            </p>
+            <p class="dates">Dates : 2023 - 2024</p>
+        </div>
+
+        <div class="rectangle">
+            <img src="/Projet/image/GLPI.png" alt="Installation Debian">
+            <h4>Installation de GLPI</h4>
+            <p class="description">
+                GLPI est une application web qui donne la possibilité de visualiser et gérer son système d'information de manière complète
+            </p>
+            <p class="dates">Dates : 2023 - 2024</p>
+        </div>
+
+        <div class="rectangle">
+            <img src="/Projet/image/DOCKER.png" alt="Installation Debian">
+            <h4>DOCKER</h4>
+            <p class="description">
+                Docker est un outil d'emballage d'applications et de leurs
+                dépendances dans des conteneurs.-Ces conteneurs agissent comme des boîtes virtuelles. -Contenant tout ce dont une application a besoin pour
+                fonctionner. ».
+            </p>
+            <p class="dates">Dates : 2023 - 2024</p>
+            <button><a href="/Projet/document/DOCKER.pdf">COMPTE RENDUE INSTALLATION DOCKER</a></button>
+        </div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+      <!-- Bouton retour en arrière -->
+      <button class="back-btn" onclick="goBack()">Retour en arrière</button>
+  </section>
+
+  <!-- Section contenant les projets code -->
+  <section id="code" class="tab-content" style="display: none;">
+      <div class="contenaire">
+          <div class="rectangle">
+              <img src="/Projet/image/original_2.jpeg" alt="Site Disney+">
+              <h4>Site Disney +</h4>
+              <p class="description">
+                  The Walt Disney Company vous a sollicité pour créer la page vitrine française et anglaise
+                  de leur plateforme Disney+.
+              </p>
+              <p class="dates">Dates : 2023 - 2024</p>
+              <button><a href="/Projet/document/cdc-tech-disney-plus-STEJKOWSKI-Alexandre (2).pdf">Cahier des charges</a></button>
+              <button><a href="https://alexandre-stejkowski.github.io/STEJKOWSKI-Alexandre-projet-Disney-plus/" target="_blank" class="btn-disney">
+                Voir le projet Disney+
+            </a></button>
+          </div>
+
+          <div class="rectangle">
+            <img src="/Projet/image/origine-logo-JO-Paris-2024.PNG" alt="Site Disney+">
+            <h4>PROJET J.O</h4>
+            <p class="description">
+                The Walt Disney Company vous a sollicité pour créer la page vitrine française et anglaise
+                de leur plateforme Disney+.
+            </p>
+            <p class="dates">Dates : 2023 - 2024</p>
+            <button><a href="/Projet/document/cdc-technique-trame-jo.pdf">Cahier des charges</a></button>
+        </div>
+
+        <div class="rectangle">
+            <img src="/Projet/image/java.png" alt="Site Disney+">
+            <h4>PROJET Java</h4>
+            <p class="description">
+                The Walt Disney Company vous a sollicité pour créer la page vitrine française et anglaise
+                de leur plateforme Disney+.
+            </p>
+            <p class="dates">Dates : 2023 - 2024</p>
+        </div>
+      </div>
+      <!-- Bouton retour en arrière -->
+      <button class="back-btn" onclick="goBack()">Retour en arrière</button>
+  </section>
+
+  <!-- Bouton retour à l'accueil -->
+  <button id="return-home-btn" class="return-home-btn"><a href="/index.html">Retour à l'accueil</a></button>
+
+  <!-- Vidéo en arrière-plan -->
+  <video autoplay loop muted playsinline class="fullscreen-video">
+      <source src="/Projet/video/108813-681686688.mp4" type="video/mp4">
+  </video>
+
+  <!-- JavaScript pour gérer les interactions -->
+  <script>
+      function navigateTo(tabId) {
+          // Masquer le choix initial
+          document.getElementById('initial-choice').style.display = 'none';
+
+          // Cacher le bouton "Retour à l'accueil"
+          document.getElementById('return-home-btn').style.display = 'none';
+
+          // Masquer toutes les sections
+          const tabs = document.querySelectorAll('.tab-content');
+          tabs.forEach(tab => tab.style.display = 'none');
+
+          // Afficher la section sélectionnée
+          document.getElementById(tabId).style.display = 'block';
+      }
+
+      function goBack() {
+          // Réafficher le choix initial
+          document.getElementById('initial-choice').style.display = 'block';
+
+          // Réafficher le bouton "Retour à l'accueil"
+          document.getElementById('return-home-btn').style.display = 'block';
+
+          // Masquer toutes les sections
+          const tabs = document.querySelectorAll('.tab-content');
+          tabs.forEach(tab => tab.style.display = 'none');
+      }
+  </script>
+</body>
+</html>

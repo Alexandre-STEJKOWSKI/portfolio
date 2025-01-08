@@ -1,0 +1,216 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Fond clair et apaisant */
+  color: #333; /* Texte gris foncé pour lisibilité */
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Le lien hérite de la couleur actuelle */
+}
+
+/* Titre de la section */
+.Titre {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #222; /* Fond sombre */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre élégante */
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+/* Conteneur principal */
+/* Conteneur principal */
+.contenaire {
+  display: flex;
+  flex-wrap: wrap; /* Permet l'adaptation des blocs sur des petits écrans */
+  justify-content:baseline;
+  gap: 20px; /* Espacement entre les blocs */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Bloc de projet */
+.rectangle {
+  width: calc(25% - 20px); /* 4 blocs par ligne avec un espacement de 20px */
+  background-color: #fff; /* Fond blanc */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  padding: 15px;
+  text-align:center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
+}
+
+.rectangle:hover {
+  transform: translateY(-15px); /* Légère élévation au survol */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Ombre renforcée */
+}
+
+/* Image des projets */
+.rectangle img {
+  width: 100%;
+  border-radius: 10px; /* Coins arrondis */
+  margin-bottom: 15px;
+}
+
+/* Titre du projet */
+.rectangle h2 {
+  font-size: 1.2rem;
+  color: #222; /* Texte sombre */
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Description des projets */
+.rectangle .description {
+  font-size: 1rem;
+  color: #555; /* Texte secondaire gris */
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Dates ou autres détails */
+.dates2 {
+  font-size: 0.9rem;
+  color: #888; /* Texte gris clair */
+  margin-top: 15px;
+}
+
+/* Boutons dans les cartes projet */
+.rectangle button {
+  background-color: #007BFF; /* Couleur bleu professionnel */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rectangle button:hover {
+  background-color: #0056b3; /* Couleur bleu foncé au survol */
+}
+
+/* Boutons au choix initial */
+.tabs {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.tab-btn {
+  background-color: #007BFF; /* Bleu professionnel */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin: 0 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.tab-btn:hover {
+  background-color: #0056b3; /* Bleu foncé au survol */
+}
+
+/* Boutons retour en arrière */
+.back-btn {
+  margin: 20px auto;
+  display: block;
+  background-color: #6c757d; /* Gris */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #5a6268; /* Gris foncé */
+}
+
+/* Bouton retour à l'accueil */
+.return-home-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #222; /* Fond sombre */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.return-home-btn:hover {
+  background-color: #444; /* Fond plus clair au survol */
+}
+
+.return-home-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Cacher initialement le bouton retour à l'accueil */
+#return-home-btn {
+  display: block;
+}
+/* Bouton retour à l'accueil */
+.back-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #222; /* Fond sombre */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #444; /* Fond plus clair au survol */
+}
+
+.back-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Vidéo en plein écran en arrière-plan */
+.fullscreen-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Place la vidéo derrière le contenu */
+}
+
+/* Responsiveness pour mobile */
+@media (max-width: 768px) {
+  .rectangle {
+    width: 100%; /* Les blocs prennent toute la largeur sur mobile */
+  }
+
+  .Titre {
+    font-size: 1.5rem;
+  }
+}
+
+
