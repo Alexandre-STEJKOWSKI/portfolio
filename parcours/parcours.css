@@ -159,6 +159,62 @@ button.retour:hover {
   filter: brightness(50%); /* Réduit la luminosité pour le texte au-dessus */
 }
 
+.stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.rectangle-stage {
+  background-color: #f4f4f4;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rectangle-stage img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.rectangle-stage h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.rectangle-stage p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.rectangle-stage button {
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rectangle-stage button a {
+  text-decoration: none;
+  color: white;
+}
+
+.rectangle-stage button:hover {
+  background-color: #0056b3;
+}
+
+
 /* Responsiveness */
 @media (max-width: 768px) {
   .contenaire {
