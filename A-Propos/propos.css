@@ -13,6 +13,10 @@ a {
   color: inherit;
 }
 
+p {
+  text-align : justify ;
+}
+
 button a {
   color: inherit;
 }
