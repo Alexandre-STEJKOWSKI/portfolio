@@ -19,7 +19,7 @@ body {
 
 .container {
     max-width: 600px;
-    margin: 300px auto;
+    margin: 100px auto;
     text-align: center;
     padding: 20px;
     background: rgba(0, 0, 0, 0.8); /* Transparence pour voir la vidéo */
