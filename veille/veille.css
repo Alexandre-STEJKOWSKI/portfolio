@@ -1,124 +1,122 @@
+/* Style global */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("image/background.png");
-    background-size: cover; /* Assure que l'image couvre toute la page */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    background-position: center center; /* Centre l'image dans la page */
-    background-attachment: fixed; /* Garde l'image fixe lors du défilement */
+    background-image: url("/veille/image/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
-
+/* Liens */
 a {
     text-decoration: none;
-    color: inherit;/* permet d'enlever la couleur bleu du lien */
+    color: inherit;
 }
 
-head .Titre {
-    color: rgb(255, 255, 255);
-}
-
-.Titre{
-    padding: 25px; /* longueur barre noire*/
+/* Titre principal */
+.Titre {
+    padding: 25px;
+    text-align: center;
+    color: white;
 }
 
 .Titre h1 {
-    text-align: center;
-    color: rgb(254, 253, 253);
-    margin: 0;/*permet de coller la barre noire en haut */ 
+    margin: 0;
+}
+
+/* Définition */
+.definition {
+    color: #f0f0f0;
+    padding: 20px;
+    text-align: justify;
+}
+
+
+.sous-titre {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    margin: 40px auto; /* Ajoute un espace autour */
 }
 
 .sous-titre h3 {
-   margin-top: 30px;
-   color: rgb(255, 254, 254);
+    width: 350px;
+    border-radius: 10px;
+    background: rgba(253, 252, 252, 0.6);
+    padding: 20px;
+    text-align: center;
+    color: rgb(7, 7, 7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Pour un effet de profondeur */
 }
 
-.definition{
-    color: #f0f0f0;
-
-}
 
 
+/* Ligne des boutons */
 .ligne1 {
-    display: flex; /* Utilisation de Flexbox pour aligner les éléments */
-    justify-content: flex-start; /* Aligne les éléments à gauche */
-    gap: 40px; /* Espacement horizontal entre les blocs */
-    margin: 20px 0; /* Espace en haut et en bas de la ligne */
-}
-
-.application-container {
     display: flex;
-    justify-content: flex-end; /* Aligne tout le bloc vers la droite */
-    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px; /* Espace entre les boutons */
+    margin: 40px auto; /* Centrage vertical */
 }
 
-.application {
-    background-color: #f0f0f0; /* Couleur de fond claire */
-    padding: 20px; /* Espace à l'intérieur de chaque élément */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
-    text-align: center; /* Centre le texte */
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    width: 150px;
-}
-
-.application a {
-    text-decoration: none;
-    color: #333;
-}
-
-.application:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.ligne1 .application:first-child {
-    background-color: #f0f0f0; /* Change la couleur de fond du premier élément */
-    color: rgb(7, 6, 6); /* Texte */
-}
-
-.ligne1 .application:first-child a {
-    color: rgb(7, 5, 5); /* Texte du lien en noir */
-}
-
+/* Type de veille */
 .type {
     margin-top: 40px;
-    color: rgb(255, 254, 254);
+    color: white;
+    text-align: center;
 }
 
-
-.contenaire{
-    display:flex;
+/* Conteneur principal */
+.contenaire {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px 0;
 }
 
-
+/* Rectangle */
 .rectangle {
-    width: 350px; /* Définit la largeur du conteneur à 350 pixels */
-    border-radius: 10px; /* Arrondit les coins du conteneur de 10 pixels */
-    box-shadow: 0 4px 8px rgba(252, 251, 251, 0.1); /* Ajoute une ombre légère autour du conteneur pour un effet de relief */
-    padding: 20px; /* Ajoute un espacement intérieur de 20 pixels autour du contenu */
-    text-align:justify; /* Centre tout le texte et le contenu à l'intérieur du conteneur */
-    margin-right: 25px;
+    width: 350px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: justify;
+    color: white;
 }
 
 .rectangle img {
-    width: 100%; /* L'image occupe 100 % de la largeur du conteneur parent */
-    height: auto; /* La hauteur de l'image est ajustée proportionnellement à sa largeur pour garder ses proportions */
-    border-radius: 10px; /* Arrondit les coins de l'image de 10 pixels pour correspondre au conteneur */
+    width: 100%;
+    border-radius: 10px;
 }
 
 .rectangle h2 {
-    font-size: 22px; /* Définit la taille du texte du titre à 22 pixels */
-    color: #faf8f8; /* Applique une couleur de texte gris foncé (#333) pour le titre */
-    margin: 15px 0; /* Ajoute une marge de 15 pixels en haut et en bas du titre */
+    margin: 15px 0;
+    font-size: 22px;
 }
 
 .rectangle p {
-    font-size: 16px; /* Définit la taille du texte du paragraphe à 16 pixels */
-    color: #fcfbfb; /* Applique une couleur de texte gris moyen (#555) pour le paragraphe */
-    line-height: 1.6; /* Définit l'espacement entre les lignes de texte à 1,6 pour améliorer la lisibilité */
+    font-size: 16px;
+    line-height: 1.6;
 }
 
+
+/* Boutons */
+.bouton, .rectangle button {
+    background-color: white;
+    color: black;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bouton:hover, .rectangle button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
