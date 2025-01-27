@@ -84,6 +84,7 @@ button.retour:hover {
 
 /* Blocs de parcours */
 .rectangle {
+  background-color:white ;
   border-radius: 15px; /* Coins arrondis */
   padding: 20px;
   max-width: 350px;
@@ -107,13 +108,13 @@ button.retour:hover {
 
 .rectangle h2 {
   font-size: 1.5rem;
-  color: #fff;
+  color: #070707;
   margin-bottom: 10px;
 }
 
 .rectangle h3 {
   font-size: 1rem;
-  color: #fffefe; /* Texte secondaire */
+  color: #050505; /* Texte secondaire */
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -127,7 +128,7 @@ button.retour:hover {
 .rectangle ul li {
   font-size: 0.9rem;
   margin-bottom: 10px;
-  color: #bbb; /* Texte des compétences */
+  color: #030303; /* Texte des compétences */
 }
 
 /* Boutons dans les blocs */
