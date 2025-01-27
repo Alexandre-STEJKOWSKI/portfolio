@@ -13,8 +13,8 @@ a {
   color: inherit;
 }
 
-p {
-  text-align : justify ;
+p{
+  text-align: justify;
 }
 
 button a {
@@ -89,7 +89,7 @@ section .moi p span {
   color: #f6f7f8;
   max-width: 800px;
   margin: 0 auto 20px auto;
-  text-align: justify;
+  text-align:justify;
 }
 
 /* Image */
@@ -106,6 +106,7 @@ section img {
   gap: 150px; /* Ajuste l'espace entre les rectangles */
   justify-content: center;
   padding: 20px;
+  margin-top: 50px;
 }
 
 .rectangle {
@@ -114,8 +115,9 @@ section img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   max-width: 350px;
-  text-align: center;
+  text-align:center;
   transition: all 0.3s ease-in-out;
+
 }
 
 .rectangle:hover {
@@ -133,14 +135,18 @@ section img {
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 10px;
+  text-align:left;
+  
 }
 
 .rectangle h3 {
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  text-align: left;
 }
+
 
 .rectangle ul {
   text-align: left;
@@ -153,6 +159,7 @@ section img {
   margin-bottom: 10px;
   font-size: 0.9rem;
 }
+
 
 /* Footer Bouton */
 button a {
