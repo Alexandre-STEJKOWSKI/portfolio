@@ -27,7 +27,7 @@ a {
   display:flex;
   flex-wrap: wrap; /* Permet l'adaptation des blocs sur des petits écrans */
   justify-content:baseline;
-  gap: 20px; /* Espacement entre les blocs */
+  gap: 105px; /* Espacement entre les blocs */
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
