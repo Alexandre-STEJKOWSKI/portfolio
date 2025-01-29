@@ -15,18 +15,16 @@ a {
 /* Titre de la section */
 .Titre {
   text-align: center;
-  padding: 20px 0;
-  background-color: #222; /* Fond sombre */
+  padding: 1px 0;
   color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre élégante */
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 25px;
 }
 
 /* Conteneur principal */
 /* Conteneur principal */
 .contenaire {
-  display: flex;
+  display:flex;
   flex-wrap: wrap; /* Permet l'adaptation des blocs sur des petits écrans */
   justify-content:baseline;
   gap: 20px; /* Espacement entre les blocs */
