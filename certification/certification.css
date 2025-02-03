@@ -139,8 +139,8 @@ a {
 /* Bouton retour à l'accueil */
 .return-home-btn {
   position: fixed;
-  bottom: 20px;
-  left: 20px;
+  bottom: 0px;
+  left: 0px;
   background-color: #222; /* Fond sombre */
   color: white;
   padding: 10px 20px;
@@ -168,8 +168,8 @@ a {
 /* Bouton retour à l'accueil */
 .back-btn {
   position: fixed;
-  bottom: 20px;
-  left: 20px;
+  bottom: 0px;
+  left: 0px;
   background-color: #222; /* Fond sombre */
   color: white;
   padding: 10px 20px;
