@@ -58,12 +58,10 @@ button.retour:hover {
 .Titre {
   text-align: center;
   padding: 40px 20px;
-  background: linear-gradient(to right, #242424, #242424); /* Gradient élégant */
   color: #fff;
   font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   margin-bottom: 50px;
 }
 
@@ -165,6 +163,7 @@ button.retour:hover {
   align-items: center;
   margin: 20px 0;
   padding: 20px;
+  gap: 300px;
 }
 
 .rectangle-stage {
