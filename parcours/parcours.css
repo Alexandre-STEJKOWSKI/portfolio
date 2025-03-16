@@ -194,6 +194,7 @@ button.retour:hover {
   font-size: 14px;
   color: #ffffff;
   margin-bottom: 15px;
+  text-align: justify;
 }
 
 .rectangle-stage button {
